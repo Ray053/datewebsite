@@ -1,0 +1,149 @@
+
+
+// .loginMain {
+//     width: 100%;
+//     background-image: none;
+//     background-color: #fff;
+//     display: flex;
+//     flex-direction: row;
+
+//     .imageArea {
+//         width: 720px;
+//         height: 100vh;
+//         display: flex;
+//         z-index: 99;
+
+//         .loginImage {
+//             width: 720px;
+//             height: 100vh;
+//         }
+//     }
+
+//     .loginFormArea {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         flex: 3;
+//         overflow: hidden;
+
+//         .bgGradient {
+//             display: flex;
+//             position: absolute;
+//             bottom: -30%;
+//             left: 40%;
+//         }
+
+//         .bgGradient2 {
+//             display: flex;
+//             position: absolute;
+//             top: -50%;
+//             left: 80%;
+//         }
+
+//         .loginForm {
+//             width: 560px;
+//             height: 92%;
+//             background-color: rgba(255, 255, 255, 0.15);
+//             backdrop-filter: blur(100px);
+//             border-radius: 8px;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+
+//             h1 {
+//                 font-weight: 500;
+//             }
+
+//             .loginFormContent {
+//                 position: relative;
+//                 background-color: #F4F3FD;
+//                 width: 400px;
+//                 padding: 24px 40px;
+//                 border-radius: 12px;
+//                 justify-content: center;
+//                 align-items: center;
+
+//                 p {
+//                     color: #C41717;
+//                     font-size: 10px;
+//                     position: absolute;
+//                     right: 0px;
+//                 }
+
+//                 .ant-form-item {
+//                     width: 400px;
+//                     margin: 8px;
+//                 }
+
+//                 .orDivider {
+//                     position: relative;
+//                     width: 400px;
+
+//                     p {
+//                         position: absolute;
+//                         left: 48%;
+//                         color: #000;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+.loginBody {
+    overflow: hidden;
+    background-image: none;
+}
+
+.loginMain {
+    background-image: none;
+
+    .registerFormArea {
+        /* 在這裡新增@media查詢 */
+        @media (max-width: 768px) {
+            /* 螢幕寬度小於等於768px時的樣式 */
+            flex-direction: column;
+            /* 修改為column，讓imgArea和loginFormArea在垂直方向上排列 */
+            overflow: scroll;
+        }
+
+        .bgGradient {
+            bottom: -30%;
+            left: 40%;
+        }
+
+        .bgGradient2 {
+            top: -50%;
+            left: 80%;
+        }
+
+        // .loginForm {
+            // height: 92%;
+            // background-color: rgba(255, 255, 255, 0.15);
+            // backdrop-filter: blur(100px);
+            // border-radius: 8px;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center;
+
+            // h1 {
+            //     font-weight: 500;
+            // }
+
+            // .loginFormContent {
+            //     position: relative;
+            //     background-color: #f4f3fd;
+            //     padding: 24px 40px;
+            //     border-radius: 12px;
+            //     justify-content: center;
+            //     align-items: center;
+
+            //     p {
+            //         color: #c41717;
+            //         font-size: 10px;
+            //         position: absolute;
+            //         right: 0px;
+            //     }
+            // }
+        // }
+    }
+}
